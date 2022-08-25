@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <meta name="description" content="fast and easy online number generator.">
+  <meta name="keywords" content="random number,random,number,online generator,math,university,calculator">
+  <meta name="author" content="CAWMI">
+  <meta property="og:title" content="Random Number Generator" />
+  <meta property="og:url" content="" />
+  <meta property="og:description" content="fast and easy online number generator.">
+  <meta property="og:image" itemprop="image" content="" />
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="en_GB" />
+ 
+  <title>Random number generator</title>
+  <link rel="stylesheet" href="res/bootstrap.min.css">
+  <script src="res/jquery.min.js"></script>
+</head>
+<style>
+  @font-face {
+    font-family: robot;
+    src: url(res/Roboto-Light.ttf)
+  }
+
+  body,
+  div {
+    font-family: robot !important;
+  }
+
+  h4 {
+    line-height: 1.2;
+  }
+
+  .footer {
+    font-family: monospace !important;
+  }
+</style>
+
+<body>
+
+  <nav class="navbar navbar-expand-sm navbar-light bg-light navbar-fixed-top">
+    <a class="navbar-brand mx-auto" href="#">CAWMI</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse ml-md-5" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="./">Home</a>
+        </li>
+    </div>
+  </nav>
+  <div class="container mt-4 pt-3">
+    <h1 class="text-center text-dark mb-4 h3">Online Random Number Generator</h1>
+    <div class="mx-2 row bg-primary text-light py-2 rounded-lg card">
+      <div class="card-body row form">
+        <input id="output" class="form-control" type="text" value="" style="transition-duration:.5s;font-size:1.3em" readonly>
+        <div class="col-6 mt-3">
+          <span class="bg-dark text-center d-block rounded">min :</span>
+          <input class="form-control" id="minv" type="number" value="0.0">
+        </div>
+        <div class="col-6 mt-3">
+          <span class="text-center bg-dark d-block rounded">max :</span>
+          <input class="form-control" id="maxv" type="number" value="100.0">
+        </div>
+        <div class="row col-12 mx-auto mt-3">
+          <div class="form-check col-6 pl-4">
+            <input class="form-check-input" type="radio" name="ntype" class="inline-block" value="i" checked><span>integer</span>
+          </div>
+          <div class="form-check col-6 pl-4">
+            <input class="form-check-input" type="radio" name="ntype" value="r"><span>real</span>
+          </div>
+
+        </div>
+        <button id="genbut" style="" class="mx-auto form-control col-8 mt-4">generate</button>
+      </div>
+    </div>
+    <div class="toast">
+      <div class="toast-header">
+
+      </div>
+      <div class="toast-body">
+        random number <span class="rn"></span>
+      </div>
+    </div>
+  </div>
+  <div class="footer bg-light text-dark text-center h6 pt-1">
+    <p class=" py-2">randomNumber.cawmi.com @2009-2022</p>
+  </div>
+  <script src="res/bootstrap.min.js"></script>
+  <script src="res/main.js"></script>
+
+</body>
+
+</html>
