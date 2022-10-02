@@ -17,6 +17,7 @@
  
   <title>Random number generator</title>
   <link rel="stylesheet" href="res/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
   <script src="res/jquery.min.js"></script>
 </head>
 <style>
@@ -59,36 +60,28 @@
     </div>
   </nav>
   <div class="container mt-4 pt-3">
-    <h1 class="text-center text-dark mb-4 h3">Online Random Number Generator</h1>
-    <div class="mx-2 row bg-primary text-light py-2 rounded-lg card">
-      <div class="card-body row form">
-        <input id="output" class="form-control" type="text" value="" style="transition-duration:.5s;font-size:1.3em" readonly>
-        <div class="col-6 mt-3">
-          <span class="bg-dark text-center d-block rounded">min :</span>
+    <h1 class="text-center text-dark mb-4 h3 text-light">Online Random Number Generator</h1>
+    <div class="mx-2 row  text-light py-2 rounded-lg card shadow">
+      <div class="card-body row form pt-0">
+        <input id="output" class="form-control p-3" type="text" value="" style="transition-duration:.5s;font-size:1.5em" readonly>
+        <div class="col-6 mt-3 text-dark">
+          <label class=" text-center d-block rounded mb-2 border" for="minv">min :</label>
           <input class="form-control" id="minv" type="number" value="0.0">
         </div>
-        <div class="col-6 mt-3">
-          <span class="text-center bg-dark d-block rounded">max :</span>
+        <div class="col-6 mt-3 text-dark ">
+          <label class="text-center d-block rounded mb-2 border" for="maxb">max :</label>
           <input class="form-control" id="maxv" type="number" value="100.0">
         </div>
         <div class="row col-12 mx-auto mt-3">
-          <div class="form-check col-6 pl-4">
+          <div class="form-check col-6 pl-4 text-dark">
             <input class="form-check-input" type="radio" name="ntype" class="inline-block" value="i" checked><span>integer</span>
           </div>
-          <div class="form-check col-6 pl-4">
-            <input class="form-check-input" type="radio" name="ntype" value="r"><span>real</span>
+          <div class="form-check col-6 pl-4 text-dark">
+            <input class="form-check-input" type="radio" name="ntype" value="r"><span>decimal</span>
           </div>
 
         </div>
-        <button id="genbut" style="" class="mx-auto form-control col-8 mt-4">generate</button>
-      </div>
-    </div>
-    <div class="toast">
-      <div class="toast-header">
-
-      </div>
-      <div class="toast-body">
-        random number <span class="rn"></span>
+        <button id="genbut" style="" class="btn mx-auto form-control col-8 mt-4 bg-secondary text-white">generate</button>
       </div>
     </div>
   </div>
